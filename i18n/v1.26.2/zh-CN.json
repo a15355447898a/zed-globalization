@@ -4932,7 +4932,8 @@
         "The previous conversation was compacted. Use this summary as context:\\n\\nOlder context": "",
         "The previous conversation was compacted. Use this summary as context:\\n\\n{summary}": "",
         "first part\\n\\nsecond part\\n\\npending part": "",
-        "{first}\\n\\n{second_prefix}{second_suffix}\\n\\n{third_prefix}🦀": ""
+        "{first}\\n\\n{second_prefix}{second_suffix}\\n\\n{third_prefix}🦀": "",
+        "  call/雪:\\\"quoted\\\"\\\\opaque  ": ""
     },
     "zed/crates/agent/src/thread_store.rs": {
         "thread-a": "",
@@ -7300,7 +7301,7 @@
         "project/tests/integration_test.rs": "",
         "empty_dir": "",
         "project/empty_dir": "",
-        "project/empty_dir is empty.\n": "",
+        "project/empty_dir is empty.\n": "项目/empty_dir 为空。\n",
         "file.txt": "",
         "content": "",
         "project/nonexistent": "",
@@ -19943,7 +19944,27 @@
         "remote client should still be trusted": "远程客户端仍应被信任",
         "Foo": "",
         "bar": "",
-        "struct Foo {\n    bar: u32,\n}\n": ""
+        "struct Foo {\n    bar: u32,\n}\n": "",
+        "fn first() {}\\n": "",
+        "fn second() {}\\n": "",
+        "fn third(x: i32) {}\\n": "",
+        "fn fourth() {}\\n": "",
+        "fn fifth() {}\\n": "",
+        "// see LICENSE for details\\nfn main() {}": "",
+        "line1\\nline2\\nline3\\nline\\n": "",
+        "old line1\\nold line2\\n": "",
+        "pub fn foo() -> usize {\\n    4\\n}": "",
+        "[*]\\ntab_width = 2\\n": "",
+        "[*]\\ntab_width = 3\\n": "",
+        "[*.rs]\\ntab_width = 6\\n": "",
+        "[*]\\nindent_size = 5\\n": "",
+        "[*]\\n": "",
+        "[*]\\nindent_size = 9\\n": "",
+        "one\\ntwo\\nthree\\nfour\\nfive": "",
+        "<div class=\\\"wrap\\\">hello</div>": "",
+        "<p><div class=\\\"wrap\\\">hello</div></p>": "",
+        "fn main() {\\n    if true {\\n        println!(\\\"hello\\\");\\n    }\\n}\\n": "",
+        "struct Foo {\\n    bar: u32,\\n}\\n": ""
     },
     "zed/crates/collab/tests/integration/following_tests.rs": {
         "user_a": "",
@@ -24318,7 +24339,8 @@
         "src": "",
         "main.rs": "",
         "fn main() {}": "",
-        ".devcontainer/rust/devcontainer.json": ""
+        ".devcontainer/rust/devcontainer.json": "",
+        ".devcontainer/devcontainer.json": ""
     },
     "zed/crates/dev_container/src/devcontainer_json.rs": {
         "camelCase": "",
@@ -29491,7 +29513,8 @@
         "   ": "",
         "\\r\\n\\nfoo": "",
         "\\r\\n\\n": "",
-        " >>>=": ""
+        " >>>=": "",
+        ">>>=": ""
     },
     "zed/crates/edit_prediction_ui/src/edit_prediction_button.rs": {
         "/settings/copilot": "",
@@ -29883,10 +29906,10 @@
         "C": "",
         "Unknown": "未知",
         "lsp ext switch source header proto request": "LSP 扩展切换源文件/头文件 proto 请求",
-        "Switch source/header LSP request for path \"{source_file}\" failed": "路径 \"{source_file}\" 的切换源文件/头文件 LSP 请求失败",
-        "Parsing URL \"{}\" returned from switch source/header failed": "解析切换源文件/头文件返回的 URL \"{}\" 失败",
+        "Switch source/header LSP request for path \"{source_file}\" failed": "路径 \"{source_file}\" 的源文件/头文件切换 LSP 请求失败",
+        "Parsing URL \"{}\" returned from switch source/header failed": "解析源文件/头文件切换返回的 URL \"{}\" 失败",
         "URL conversion to file path failed for \"{}\"": "URL \"{}\" 转换为文件路径失败",
-        "Switch source/header could not open \"{}\" in workspace": "切换源文件/头文件无法在工作区中打开 \"{}\""
+        "Switch source/header could not open \"{}\" in workspace": "源文件/头文件切换无法在工作区中打开 \"{}\""
     },
     "zed/crates/editor/src/clipboard.rs": {
         "Markdown": "",
@@ -35643,7 +35666,12 @@
         "--exact": "",
         "shell runnable should appear for #[test] fn": "Shell 可运行项应出现在 #[test] 函数上",
         "shell runnable task template should exist": "Shell 可运行项的任务模板应存在",
-        "shell runnable should preserve program args": "Shell 可运行项应保留程序参数"
+        "shell runnable should preserve program args": "Shell 可运行项应保留程序参数",
+        "fn main() {\\n    println!(\\\"hello\\\");\\n}\\n": "",
+        "//\\n": "",
+        "#[test]\\nfn test_one() {\\n    assert!(true);\\n}\\n": "",
+        "// added comment\\n": "",
+        "\\nfn test_one": ""
     },
     "zed/crates/editor/src/rust_analyzer_ext.rs": {
         "Rust": "",
@@ -59310,7 +59338,8 @@
         "{line}": "",
         "        .foo { color: red; }\\n": "",
         "my-svg": "",
-        "#my-svg .foo": ""
+        "#my-svg .foo": "",
+        ".section-{i}": ""
     },
     "zed/crates/mermaid_render/src/postprocess/strip_foreignobject.rs": {
         "fallback": "",
@@ -63443,7 +63472,9 @@
         "Cursor": "",
         "test-support": "",
         "git": "",
-        "ignore": ""
+        "ignore": "",
+        "%APPDATA%\\\\": "",
+        "\\\\AGENTS.md": ""
     },
     "zed/crates/picker/src/footer.rs": {
         "picker-preview-toggle": "",
@@ -76333,7 +76364,7 @@
         "Deprecated, use workspace::CloseActiveItem": "已弃用,请使用 工作区::CloseActiveItem"
     },
     "zed/crates/settings_content/src/agent.rs": {
-        "a percentage string like \"90%\" or an integer number of tokens": "形如 \"90%\" 的百分比字符串或整数形式的 token 数量",
+        "a percentage string like \"90%\" or an integer number of tokens": "形如 \"90%\" 的百分比字符串或整数 token 数量",
         "Allow always": "始终允许",
         "Duplicate patterns should not be added": "不应添加重复的模式",
         "off switch": "关闭开关",
@@ -78400,7 +78431,7 @@
         "title_bar.button_layout$": "",
         "close:minimize,maximize": "",
         "Custom Button Layout": "自定义按钮布局",
-        "GNOME-style layout string such as \"close:minimize,maximize\".": "GNOME 风格的布局字符串,例如 \"关闭:minimize,maximize\"。",
+        "GNOME-style layout string such as \"close:minimize,maximize\".": "GNOME 风格的布局字符串,例如 \"关闭:最小化,最大化\"。",
         "title_bar.button_layout": "",
         "Open Menus on Hover": "悬停时打开菜单",
         "Automatically open menus in the titlebar on hover.": "悬停时自动打开标题栏中的菜单。",
@@ -78826,7 +78857,16 @@
         "drop_target_size": "",
         "Code Lens": "代码透镜",
         "Whether and how to display code lenses from language servers.": "是否以及如何显示来自语言服务器的代码透镜。",
-        "code_lens": ""
+        "code_lens": "",
+        "Controls line number display in the editor's gutter. \\\"disabled\\\" shows absolute line numbers, \\\"enabled\\\" shows relative line numbers for each absolute line, and \\\"wrapped\\\" shows relative line numbers for every line, absolute or wrapped.": "控制编辑器行号槽中的行号显示。\\\"disabled\\\" 显示绝对行号,\\\"enabled\\\" 为每个绝对行显示相对行号,\\\"wrapped\\\" 为每一行(无论绝对行还是折行)显示相对行号。",
+        "Files or globs of files that will be excluded by Zed entirely. They will be skipped during file scans, file searches, and not be displayed in the project file tree. Takes precedence over \\\"File Scan Inclusions\\\"": "将被 Zed 完全排除的文件或文件 glob。它们会在文件扫描、文件搜索中被跳过,也不会显示在项目文件树中。优先级高于 \\\"File Scan Inclusions\\\"",
+        "Files or globs of files that will be included by Zed, even when ignored by git. This is useful for files that are not tracked by git, but are still important to your project. Note that globs that are overly broad can slow down Zed's file scanning. \\\"File Scan Exclusions\\\" takes precedence over these inclusions": "将被 Zed 包含的文件或文件 glob,即使它们被 git 忽略。这对于未被 git 跟踪但对项目仍然重要的文件很有用。注意,过于宽泛的 glob 会拖慢 Zed 的文件扫描。\\\"File Scan Exclusions\\\" 的优先级高于这些包含项",
+        "GNOME-style layout string such as \\\"close:minimize,maximize\\\".": "GNOME 风格的布局字符串,例如 \\\"关闭:minimize,maximize\\\"。",
+        "When auto compaction runs. A percentage string like \\\"90%\\\" is measured against the context window. A positive integer is the number of used tokens to compact after. A negative integer is the number of tokens remaining in the context window before compacting.": "自动压缩何时运行。像 \\\"90%\\\" 这样的百分比字符串是相对于上下文窗口计算的。正整数表示已使用多少 token 后执行压缩。负整数表示上下文窗口中剩余多少 token 时执行压缩。",
+        "On: format the whole buffer.\\nOff: do not format.\\nModifications: format only lines with unstaged changes; skips formatting when a git diff or LSP range formatting is unavailable.\\nModifications If Available: same, but falls back to formatting the whole buffer.": "On: 格式化整个缓冲区。\\nOff: 不格式化。\\nModifications: 仅格式化有未暂存更改的行;当 git 差异 或 LSP 范围格式化不可用时跳过格式化。\\nModifications If Available: 同上,但会回退为格式化整个缓冲区。",
+        "Whether to use additional LSP queries to format (and amend) the code after every \\\"trigger\\\" symbol input, defined by LSP server capabilities": "是否在每次输入 \\\"触发\\\" 符号后使用额外的 LSP 查询来格式化(并修正)代码,由 LSP 服务器能力定义",
+        "Visible character used to render space characters when show_whitespaces is enabled (default: \\\"•\\\")": "启用 show_whitespaces 时用于渲染空格字符的可见字符(默认:\\\"•\\\")",
+        "Visible character used to render tab characters when show_whitespaces is enabled (default: \\\"→\\\")": "启用 show_whitespaces 时用于渲染制表符字符的可见字符(默认:\\\"→\\\")"
     },
     "zed/crates/settings_ui/src/pages/audio_input_output_setup.rs": {
         "System Default": "系统默认",
